@@ -1,3 +1,6 @@
+## NgxTextDiff - v17.0.1
+* Remove npm from engines
+
 ## NgxTextDiff - v17.0.0
 * Added support for Angular 17
 

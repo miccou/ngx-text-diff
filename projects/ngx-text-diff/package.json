@@ -10,8 +10,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": "^18.13.0 || ^20.9.0",
-    "npm": "10.2.4"
+    "node": "^18.13.0 || ^20.9.0"
   },
   "author": {
     "name": "Alfredo Benassi",
