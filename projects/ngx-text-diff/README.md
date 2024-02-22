@@ -2,20 +2,21 @@
 - A simple text diff `component` to be used with Angular and based on `google diff match patch` library.
 
 ## Dependencies
- - diff-match-patch : ^1.0.5
+ - diff-match-patch: ^1.0.5
+ - tslib: ^2.0.0
 
 ## Required Packages
 These packages will not be auto-installed and must be installed in addition to this library.
- - @angular/common >= 16.0.0
- - @angular/core >= 16.0.0
- - @angular/forms >= 16.0.0
- - @angular/cdk >= 16.0.0 (used for scrolling synchronization)
+ - @angular/common >= 17.0.0
+ - @angular/core >= 17.0.0
+ - @angular/forms >= 17.0.0
+ - @angular/cdk >= 16.0.0 or >= 17.0.0 (used for scrolling synchronization) (supports 16 and 17 to support people using @angular/material@16 for legacy components)
 
 ## Demo
-[Ngx Text Diff Demo](https://github.com/winarg/ngx-text-diff)
+[Ngx Text Diff Demo](https://github.com/miccou/ngx-text-diff)
 
 ## Installation
-`npm i @winarg/ngx-text-diff`
+`npm i @miccou/ngx-text-diff`
 
 ## API
 `module: NgxTextDiffModule`  
@@ -74,7 +75,7 @@ import { NgModule } from '@angular/core';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 
 import { AppComponent } from './app.component';
-import { NgxTextDiffModule } from 'ngx-text-diff';
+import { NgxTextDiffModule } from '@miccou/ngx-text-diff';
 
 @NgModule({
   declarations: [AppComponent],
@@ -87,7 +88,7 @@ export class AppModule {}
 
 ``` typescript
 import { Component, OnInit } from '@angular/core';
-import { DiffContent, DiffResults } from 'ngx-text-diff/lib/ngx-text-diff.model';
+import { DiffContent, DiffResults } from '@miccou/ngx-text-diff/lib/ngx-text-diff.model';
 
 @Component({
   selector: 'app-home',
@@ -125,3 +126,5 @@ Run `ng build ngx-text-diff` to build the library. The build artifacts will be s
 ## Credits
 
 This project is based on [google diff match patch](https://github.com/google/diff-match-patch).
+
+Thanks to the original author Alfredo Benassi and most recent maintainer Anargyros Roussos for their work on this project.

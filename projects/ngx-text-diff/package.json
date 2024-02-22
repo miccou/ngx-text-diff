@@ -1,6 +1,6 @@
 {
-  "name": "@winarg/ngx-text-diff",
-  "version": "16.0.1",
+  "name": "@miccou/ngx-text-diff",
+  "version": "17.0.0",
   "description": "A Text Diff component for Angular.",
   "keywords": [
     "Angular",
@@ -9,27 +9,32 @@
     "Diff"
   ],
   "license": "MIT",
+  "engines": {
+    "node": "^18.13.0 || ^20.9.0",
+    "npm": "10.2.4"
+  },
   "author": {
     "name": "Alfredo Benassi",
     "email": "alfrebenassi@gmail.com"
   },
   "contributors": [
-    "Anargyros Roussos"
+    "Anargyros Roussos",
+    "miccou"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/winarg/ngx-text-diff.git"
+    "url": "https://github.com/miccou/ngx-text-diff.git"
   },
-  "homepage": "https://github.com/winarg/ngx-text-diff",
+  "homepage": "https://github.com/miccou/ngx-text-diff",
   "dependencies": {
     "diff-match-patch": "^1.0.5",
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "16",
-    "@angular/core": "16",
-    "@angular/forms": "16",
-    "@angular/cdk": "16",
-    "rxjs": "~7.8.1"
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/cdk": "^16.0.0 || ^17.0.0",
+    "rxjs": "^7.8.1"
   }
 }

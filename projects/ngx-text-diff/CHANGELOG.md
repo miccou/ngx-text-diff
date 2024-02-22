@@ -1,3 +1,6 @@
+## NgxTextDiff - v17.0.0
+* Added support for Angular 17
+
 ## NgxTextDiff - v16.0.0
 * Added support to Angular 16
 
